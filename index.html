@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  href="file.css">
+    <title>Web Portfolio</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top1">
+        <span class="types"></span>
+        <button style="position:fixed;cursor: pointer;" onclick=aboutf()><u>About</u> </button>
+      </div>
+      <div class="top2">
+        <button onclick=skile()>Skills</button>
+        |
+        <button onclick=proj()>Projects</button>
+        |
+        <button onclick=cont()>Contact</button>
+
+      </div>
+    </div>
+    <div class="side-bar slide-right">
+      <button onclick=cont() class="icon-but">
+        <img src="icons/mail.svg" alt="mail" loading="eager" class="icon">
+      </button>
+      <p class="icon-text">Mail</p>
+      <button onclick=wqr() class="icon-but">
+        <img src="icons/whatsapp.svg" alt="whatsapp" loading="eager" class="icon">
+      </button>
+      <p class="icon-text">Whatsapp</p>
+      <button onclick=cont() class="icon-but">
+        <img src="icons/phone.svg" alt="notepad" loading="eager" class="icon">
+      </button>
+      <p class="icon-text">Contact</p>
+      <button  class="icon-but">
+        <img src="icons/linkedin.svg" alt="linkedin" loading="eager" class="icon" onclick="window.open('http://www.linkedin.com/in/harshvmehta','_blank')">
+      </button>
+      <p class="icon-text">Linkedin</p>
+      <button class="icon-but">
+        <img src="icons/github.svg" alt="github" loading="eager" class="icon"
+        onclick="window.open('https://github.com/Haksham','_blank')">
+      </button>
+      <p class="icon-text">Github</p>
+      <button class="icon-but" onclick="window.open('https://www.instagram.com/harsh_v.m.mehta','_blank')">
+        <img src="icons/insta.svg" alt="insta" loading="eager" class="icon">
+      </button>
+      <p class="icon-text">Instagram</p>
+    </div>
+    <div class="right-bar slide-left">
+      <button class="icon-but">
+        <img src="icons/recycle-bin.png" loading="eager" alt="bin" class="icon" onclick=showpost()>
+      </button>
+      <p class="icon-text">Bin</p>
+    </div>
+
+    <div class="mid">
+      <div class="my-img"></div>
+      
+      <div class="poster" id="poster">
+      <img loading="lazy" src="icons/wanted-poster.png" alt="wanted-poster" style="height: 95vh;justify-content: center;">
+      </div>
+      <div class="format" id="format">
+        <div class="f1">
+          Hello.................
+          <button onclick="aboutf()" class="x-but">x</button>
+        </div>
+        <div class="f2">
+          <spam class="abt-text"></spam>
+          <img src="icons/my-img.png" loading="lazy" alt="myimage" style="height: 140px;position: absolute;left: 270px;top: 5px;">
+        </div>
+      </div>
+      <div class="whatqr" id="whatqr">
+        <div class="f1">
+          Here it is :-}
+          <button onclick=wqr() class="x-but">x</button>
+        </div>
+        <div class="f2">
+          <img src="icons/wqr.jpg" loading="lazy" alt="w-qr" style="height: 60vh;">
+        </div>
+      </div>
+      <div class="sun">
+        <div onclick=night() class="sun-img rotate">
+        </div>        
+      </div>
+      <div class="proj" id="proj">
+        <div class="f1">
+          <div>
+            Project :-<span class="typ"></span>
+          </div>
+          <button onclick=proj() class="x-but">x</button>
+        </div>
+        <div class="f2">
+          <img src="icons/punch3.png" loading="lazy" style="align-self: center; height: 35vh; width: 35vh; border-radius: 100%;box-shadow: 2px 2px 5px rgb(102, 101, 101);">
+          Self made character website. <a href="https://haksham.github.io/html/" style="color: rgb(38, 193, 228); " target="_blank"><u>Here</u></a>
+        </div>
+      </div>
+      <div class="skill" id="skill">
+        <div class="f1">
+          <div>
+            My Skills<span class="typo"></span>
+          </div>
+          <button onclick=skile() class="x-but">x</button>
+        </div>
+        <div class="f2">
+          <div class="image-slideshow">
+              <div class="image fade">
+              <img src="icons/html.png" loading="lazy"  class="skills-pic">
+              <p class="slide-text">HTML</p>
+              </div>
+              <div class="image fade">
+              <img src="icons/c-logo.jpeg" loading="lazy"  class="skills-pic">
+              <p class="slide-text">C Lang.</p>
+              </div>
+              <div class="image fade">
+              <img src="icons/python.png" loading="lazy"  class="skills-pic">
+              <p class="slide-text">Python</p>
+              </div>
+              <div class="image fade">
+                <img src="icons/vs-logo.jpeg" loading="lazy" class="skills-pic">
+                <p class="slide-text">VS Code</p>
+              </div>
+              <div class="image fade">
+                <img src="icons/css.png" loading="lazy" class="skills-pic">
+                <p class="slide-text">CSS</p>
+              </div>
+              <div class="image fade">
+                <img src="icons/js.png" loading="lazy" class="skills-pic">
+                <p class="slide-text">JS</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="f1">
+          Contacts :->
+          <button onclick=cont() class="x-but">x</button>
+        </div>
+        <div class="f2">
+          <p style="font-size: larger; color: whitesmoke;"><b>Mobile:</b> +91 XXXXX XXXXX</p>
+          <p style="font-size: larger; color: whitesmoke;"><b>Email: </b>extraonmymail@gmail.com</p>
+        </div>
+      </div>
+    </div>   
+    <div class="bottom">
+      <div class="bott1">
+        <button class="butt-but" onclick=start()>
+          <img src="icons/icon.jpg" loading="lazy" alt="my icon" class="bott-icon">
+          Start
+        </button>
+        <a href="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/retro%20websites_32023-Apr-19-2023-07-39-21-7733-PM.png?width=1300&height=628&name=retro%20websites_32023-Apr-19-2023-07-39-21-7733-PM.png" target="_blank" class="refer">Refrence</a>
+      </div>
+      <div class="bottom-text">
+        © 2023-Project by H.V.M.
+      </div>
+      <div class="bott-end" id="datetime">
+
+      </div>
+    </div>
+  </body>
+  <link rel="stylesheet"  href="middle.css">
+  <script src="script.js" defer ></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    AOS.init();
+    var typed = new Typed(".types",
+    {strings:["Harshvardhan Mehta ->"],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:false})
+
+    var typed = new Typed(".typo",
+    {strings:["..........................................",".........................................."],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true})
+    
+
+    var typed = new Typed(".typ",
+    {strings:[">   ","}   ",")   ","/   ","]   ","o   "],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true})
+    
+
+    var typed=new Typed(".abt-text",
+      {strings:["Hi Guys,<br>Myself Harshvardhan Mehta <br>from CSE department in <br> MS Ramaiah college of <br>engineering and currently <br> in 2nd year. <br>Inspired by various people nearby me I opted for Computer Science and now pursuing carrier in this field. <br>My field of intrest are mostly tech related things but few exceptions are like: sweets, skating, flute, anime intrigue me the most."],
+      typeSpeed:80,
+      backSpeed:0,
+      loop:false
+      })
+  </script>
+  
+</html>

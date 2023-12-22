@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "game";
+  src: url(icons/retro-gaming/Retro\ Gaming.ttf);
+}
+
+@keyframes slide_right {
+  from{
+    transform:translateX(-50px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.slide-right{
+  animation: slide_right 0.6s ease-in 0s 1 normal none;
+}
+
+@keyframes slide_left {
+  from{
+    transform: translateX(50px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.slide-left{
+  animation: slide_left 0.6s ease-in 0s 1 normal none;
+}
+
+@keyframes rotate {
+  to{
+    transform: rotateZ(720deg);
+  }
+}
+.rotate{
+  animation: rotate 200s linear infinite;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  transition: opacity 2s;
+}
+
+body{
+  background-image: url(icons/wallp2.jpg);
+  background-size:80%;
+  font-family: 'game';
+  background-size:100vw 100vh ;
+}
+.side-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: fixed;
+  margin-left: 9px;
+  align-items: center;
+  margin-top: 10px;
+}
+.right-bar{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  position: fixed;
+  right: 5px;
+  margin-left: 9px;
+  margin-top: 10px;
+  align-items: center;
+}
+.icon{
+  height: 30px;
+  margin:15px 0px 1px 0px ;
+}
+.icon-but{
+  background-color: none;
+  border-width: 0px;
+}
+.icon-but:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.icon:active{
+  height: 28px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+.icon-text{
+  color: whitesmoke;
+  background-color: rgba(79, 79, 79, 0.717);
+  text-align: center;
+  font-size: 70%;
+  margin-top: 2px;
+  box-shadow: 10px 7px 8px rgba(65, 64, 64, 0.755);
+}
+
+.top{
+  background-color: rgb(235, 228, 166);
+  display:flex;
+  width: 100vw;
+  justify-content: space-between;
+  font-size: 80%;
+  position: fixed;
+  z-index: 1;
+}
+.top2{
+  margin-right: 10px;
+}
+.top1{
+  padding-left: 8px;
+}
+
+
+
+.bottom{
+  background-color: rgb(67, 66, 66);
+  color: antiquewhite;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+.bott-icon{
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  left: 0px;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+.bott-end{
+  font-size: 85%;
+}
+.butt-but{
+  display: flex;
+  border: 1px solid white;
+  width: 5em;
+  border-bottom-width: 0px;
+}
+.bott1{
+  display: flex;
+  justify-content:baseline;
+}
+.refer,.bott-end,.bottom-text{
+  border: 1px solid white;
+  align-self:flex-end;
+}
